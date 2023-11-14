@@ -50,26 +50,10 @@
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabelIDEliminar" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelIDEliminar1" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelIDEliminar2" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelIDEliminar3" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelIDEliminar4" alignment="1" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="jLabelIDEliminar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jTextFieldGenero" min="-2" pref="145" max="-2" attributes="0"/>
-                      <Component id="jTextFieldDuracion" min="-2" pref="145" max="-2" attributes="0"/>
-                      <Component id="jTextFieldAnno" min="-2" pref="145" max="-2" attributes="0"/>
-                      <Component id="jTextFieldDirector" min="-2" pref="145" max="-2" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Component id="jTextFieldNombre" min="-2" pref="145" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jButtonModificar" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jTextField1" min="-2" pref="145" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -82,31 +66,10 @@
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextFieldNombre" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                      <Component id="jTextField1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                       <Component id="jLabelIDEliminar" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButtonModificar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextFieldDirector" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                      <Component id="jLabelIDEliminar1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextFieldAnno" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                      <Component id="jLabelIDEliminar2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextFieldDuracion" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                      <Component id="jLabelIDEliminar3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextFieldGenero" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                      <Component id="jLabelIDEliminar4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="98" max="32767" attributes="0"/>
+                  <EmptySpace pref="214" max="32767" attributes="0"/>
                   <Component id="jButtonVolverMod" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
@@ -137,10 +100,10 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Ingresa el Nombre de la pelicula que deseas modificar"/>
+            <Property name="text" type="java.lang.String" value="Ingresa el ID de la pelicula que deseas modificar"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldNombre">
+        <Component class="javax.swing.JTextField" name="jTextField1">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
@@ -150,97 +113,10 @@
               <Dimension value="[64, 23]"/>
             </Property>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldNombreActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelIDEliminar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nombre:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="jButtonModificar">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="MODIFICAR"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonModificarActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldDirector">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
-              <Point value="[-32613, -32655]"/>
-            </Property>
-            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[64, 23]"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldDirectorActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldAnno">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
-              <Point value="[-32613, -32655]"/>
-            </Property>
-            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[64, 23]"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldAnnoActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldDuracion">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
-              <Point value="[-32613, -32655]"/>
-            </Property>
-            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[64, 23]"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldDuracionActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelIDEliminar1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Director:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelIDEliminar2">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="A&#xf1;o:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelIDEliminar3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Duracion:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jTextFieldGenero">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
-              <Point value="[-32613, -32655]"/>
-            </Property>
-            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[64, 23]"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldGeneroActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabelIDEliminar4">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Genero:"/>
+            <Property name="text" type="java.lang.String" value="ID :"/>
           </Properties>
         </Component>
       </SubComponents>

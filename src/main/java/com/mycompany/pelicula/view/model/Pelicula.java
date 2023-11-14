@@ -1,8 +1,6 @@
 
 package com.mycompany.pelicula.view.model;
 
-import java.sql.Connection;
-
 public class Pelicula {
     
     private int id;
@@ -75,10 +73,6 @@ public class Pelicula {
 
     public void setGenero(String genero) {
         this.genero = genero;
-    }
-
-    public boolean buscarPelicula(Pelicula peliculaBusqueda, Connection conexion) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     

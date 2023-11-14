@@ -307,7 +307,6 @@ public class AgregarPelicula extends javax.swing.JFrame {
       
         
         // AGREGAR a lista peliculas
-        
         Pelicula peliculaNueva = new Pelicula();
      
         peliculaNueva.setNombre(jTextFieldNombre.getText());
@@ -319,11 +318,6 @@ public class AgregarPelicula extends javax.swing.JFrame {
         
         
                 PeliculaController controlador = new PeliculaController();
-            jTextFieldNombre.setText("");
-            jTextFieldDirector.setText("");
-            jTextFieldAnno.setText("");
-            jTextFieldDuracion.setText("");
-            jTextFieldGenero.setText("");
         try {
             controlador.agregarPeliculaController(peliculaNueva, this.conector.getConn());
         } catch (SQLException ex) {

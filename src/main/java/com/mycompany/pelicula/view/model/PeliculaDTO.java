@@ -15,7 +15,7 @@ public class PeliculaDTO {
     
     public boolean agregarPelicula(Pelicula peliculaNueva, Connection conexion) throws SQLException{
         
-        String queryStatement = "INSERT INTO PELICULA (NOMBRE,DIRECTOR,ANNO,DURACION,GENERO) VALUES(?,?,?,?,?)";
+        String queryStatement = "INSERT inTO PELICULA (NOMBRE,DIRECTOR,ANNO,DURACION,GENERO) VALUES(?,?,?,?,?)";
     
         System.out.println("\n Query is " + queryStatement);   
         
@@ -34,50 +34,5 @@ public class PeliculaDTO {
         
         return true;
     }
-
-    
-    public boolean buscarPelicula(Pelicula peliculaBusqueda, Connection conexion)throws SQLException{
-        String queryStatement ="SELECT nombre,director,anno,duracion,genero FROM"+conexion.getSchema() +".PELICULA WHERE NOMBRE=?";
-        System.out.println("Query is"+queryStatement);
-        PreparedStatement ps = conexion.prepareStatement(queryStatement);
-        
-        ps.setString(1, peliculaBusqueda.getNombre());
-        ResultSet rs = ps.executeQuery();
-        
-        if(rs.next()){
-            peliculaBusqueda.setId(rs.getInt(1));
-            peliculaBusqueda.setDirector(rs.getString(3));
-            peliculaBusqueda.setAnno(rs.getInt(4));
-            peliculaBusqueda.setDuracion(rs.getInt(5));
-            peliculaBusqueda.setGenero(rs.getString(6));
-            return true;
-            
-        }else{
-            return false;
-        }
-        
-    }
-    
-    
-   public boolean peliculaModificada(Pelicula peliculaNueva, Connection conexion) throws SQLException{
-        String queryStatement ="SELECT nombre,director,anno,duracion,genero FROM"+conexion.getSchema() +".PELICULA WHERE NOMBRE=?";
-        System.out.println("Query is"+queryStatement);
-        PreparedStatement ps = conexion.prepareStatement(queryStatement);
-        
-        ps.setString(1, peliculaNueva.getNombre());
-        ps.setString(2, peliculaNueva.getDirector());
-        ps.setInt(3, peliculaNueva.getAnno());
-        ps.setInt(4,peliculaNueva.getDuracion());
-        ps.setString(5, peliculaNueva.getGenero());
-        
-        int result = ps.executeUpdate();
-        
-        System.out.println("Pelicula modificada: "+result);
-        return true;
-
-        
-    }
-
-
 
 }
